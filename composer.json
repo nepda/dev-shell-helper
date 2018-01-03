@@ -10,6 +10,6 @@
     }
   ],
   "bin": [
-    "src/systemd/stop-and-wait.sh"
+    "src/systemd/systemd-stop-and-wait.sh"
   ]
 }
