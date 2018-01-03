@@ -1,0 +1,15 @@
+{
+  "name": "nepda/dev-shell-helper",
+  "description": "Some handy helper scripts for development",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nepomuk Fraedrich",
+      "email": "info@nepda.eu"
+    }
+  ],
+  "bin": [
+    "src/systemd/stop-and-wait.sh"
+  ]
+}
