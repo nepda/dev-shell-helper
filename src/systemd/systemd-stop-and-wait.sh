@@ -26,7 +26,7 @@ fi
 echo "PID ${serviceName}: ${ExecMainPID}"
 echo "Stop ${serviceName} service"
 systemctl --user stop ${serviceName}
-echo "Waiting for ${serviceName} to be stopped"
+echo -n "Waiting for ${serviceName} to be stopped"
 if [ "${ExecMainPID}" -gt 0 ]
 then
     while kill -0 ${ExecMainPID} 2> /dev/null;
@@ -35,3 +35,4 @@ then
         sleep 1
     done
 fi
+echo ""
